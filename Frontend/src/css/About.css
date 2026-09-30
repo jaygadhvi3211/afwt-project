@@ -1,0 +1,165 @@
+.about-page-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about-hero {
+  padding: 60px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(22, 28, 42, 0.85) 0%, rgba(14, 19, 31, 0.95) 100%);
+  border: 1px solid var(--border-gold);
+}
+
+.about-title {
+  font-size: 2.8rem;
+  color: #fff;
+  max-width: 800px;
+}
+
+.about-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 720px;
+  line-height: 1.7;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.story-card {
+  padding: 32px 24px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.story-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-card h3 {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.story-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.about-team-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.team-member-card {
+  padding: 28px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--gold-primary);
+  margin-bottom: 16px;
+}
+
+.team-name {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.team-role {
+  font-size: 0.85rem;
+  color: var(--gold-light);
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.team-bio {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.milestones-section {
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: rgba(14, 19, 31, 0.8);
+}
+
+.milestone-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.milestone-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.milestone-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 4px;
+}
+
+.milestone-divider {
+  width: 1px;
+  height: 48px;
+  background: var(--border-subtle);
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+  .milestones-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .milestone-divider {
+    display: none;
+  }
+}

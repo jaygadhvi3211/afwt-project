@@ -1,0 +1,64 @@
+.luxe-register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.register-card-container {
+  max-width: 720px;
+  width: 100%;
+  padding: 40px;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-gold);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.brand-badge-center {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--gold-light);
+  margin-bottom: 12px;
+}
+
+.register-icon-gold {
+  color: var(--gold-primary);
+}
+
+.register-brand-title {
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+}
+
+.register-title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.register-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 650px) {
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .register-card-container {
+    padding: 28px 20px;
+  }
+}

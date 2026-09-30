@@ -1,0 +1,70 @@
+.chair-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.chair-status-card {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.chair-status-card.chair-available {
+  border-color: var(--success);
+  background: rgba(16, 185, 129, 0.04);
+}
+
+.chair-status-card.chair-occupied {
+  border-color: var(--border-gold);
+  background: rgba(212, 175, 55, 0.04);
+}
+
+.chair-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chair-number {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chair-barber-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chair-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold-primary);
+}
+
+.chair-stylist-name {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.chair-ends-text {
+  font-size: 0.775rem;
+  color: var(--gold-light);
+}
+
+.chair-client-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  border: 1px dashed var(--border-subtle);
+}

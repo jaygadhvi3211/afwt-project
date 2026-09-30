@@ -1,0 +1,98 @@
+.barber-timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.barber-slot-card {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+}
+
+.barber-slot-card.active-chair-slot {
+  border-color: var(--warning);
+  background: rgba(245, 158, 11, 0.05);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+.slot-time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+}
+
+.slot-time-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.slot-duration-text {
+  font-size: 0.725rem;
+  color: var(--text-muted);
+}
+
+.slot-client-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.slot-client-name {
+  font-size: 1.15rem;
+  color: #fff;
+}
+
+.slot-service-name {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.slot-notes-text {
+  font-size: 0.8rem;
+  color: var(--gold-light);
+  margin-top: 2px;
+}
+
+.slot-price-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.slot-price-tag {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.slot-action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .barber-slot-card {
+    grid-template-columns: 1fr;
+  }
+  .slot-price-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 12px;
+  }
+}

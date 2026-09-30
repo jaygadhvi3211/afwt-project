@@ -1,0 +1,284 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 1360px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.dashboard-top-banner {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background: linear-gradient(135deg, rgba(22, 28, 42, 0.95) 0%, rgba(14, 19, 31, 0.98) 100%);
+  border: 1px solid var(--border-gold);
+  text-align: left;
+}
+
+.welcome-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.banner-title {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.banner-sub {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+.customer-main-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 28px;
+}
+
+.customer-section-card {
+  padding: 26px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 14px;
+}
+
+.section-card-title {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.section-card-sub {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.appointment-card {
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.2s ease;
+}
+
+.appointment-card:hover {
+  border-color: var(--border-gold);
+}
+
+.apt-left-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.apt-date-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.apt-month {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.apt-day {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+}
+
+.apt-service-title {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.apt-details-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 4px;
+  font-size: 0.85rem;
+}
+
+.apt-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+}
+
+.apt-price {
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.apt-notes {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.apt-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.empty-state-box {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.customer-side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.curated-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.curated-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+}
+
+.curated-icon {
+  font-size: 1.5rem;
+}
+
+.curated-info {
+  flex: 1;
+}
+
+.curated-info h4 {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.curated-info span {
+  font-size: 0.775rem;
+  color: var(--gold-light);
+}
+
+.past-visits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.past-visit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.visit-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.visit-service {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.visit-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.visit-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.visit-price {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-top: 2px;
+}
+
+@media (max-width: 960px) {
+  .dashboard-top-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .customer-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .appointment-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .apt-actions {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 10px;
+  }
+}
